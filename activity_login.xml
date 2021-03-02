@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/stonecreekback"
+    tools:context=".Login">
+
+    <TextView
+        android:id="@+id/titlelogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="190dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        >
+
+    </TextView>
+    <Spinner
+        android:id="@+id/spinner"
+        android:background="@color/white"
+        android:layout_below="@+id/titlelogin"
+        android:layout_toRightOf="@+id/typeTV"
+        android:layout_marginLeft="28dp"
+        android:layout_height="50dp"
+        android:layout_width="160dp"
+        android:minWidth="205dp"
+        android:layout_marginBottom="20dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/typeTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_below="@+id/titlelogin"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="User Type"
+        android:textColor="@color/white"
+        android:textSize="20sp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/userTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/typeTV"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:text="Username"
+        android:layout_alignBaseline="@+id/userET"
+        android:textColor="@color/white"
+        android:textSize="20sp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/userET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:minWidth="205dp"
+        android:padding="10dp"
+        android:hint="Username"
+        android:layout_toRightOf="@+id/userTV"
+        android:layout_below="@id/spinner"
+        android:layout_marginLeft="28dp"
+        android:textSize="20sp"
+        android:background="@color/white"
+        >
+
+    </EditText>
+    <TextView
+        android:id="@+id/passTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/passET"
+        android:layout_below="@+id/userTV"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:text="Password"
+        android:textColor="@color/white"
+        android:textSize="20sp">
+
+    </TextView>
+    <EditText
+        android:id="@+id/passET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="45dp"
+        android:minWidth="205dp"
+        android:padding="10dp"
+        android:hint="Password"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/passTV"
+        android:layout_below="@id/userET"
+        android:layout_marginLeft="28dp"
+        android:textSize="20sp"
+        android:background="@color/white"
+        >
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/textReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not registered yet?"
+        android:layout_below="@+id/passTV"
+        android:layout_marginTop="28dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        >
+
+    </TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textReg"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        >
+
+    </TextView>
+
+
+</RelativeLayout>
